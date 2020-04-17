@@ -1,0 +1,95 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+}
+
+p{
+  position: relative;
+}
+
+
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: monotype corsiva;
+  color: gold;
+}
+
+em{
+position:absolute;
+ right:0px;
+ top: 0px;
+  font-size:1.5em;
+  font-style: italic;
+  font-family:Times new roman;
+  background-color: yellow;
+  text-align:center;
+}
+
+
+p {
+
+  border: 1px solid black;
+  background-color:#C0C0C0;
+  width: 90%;
+  height: 220px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: verdana;
+  color: Black;
+}
+
+
+/* Simple Responsive Framework. */
+.row 
+{
+  width: 100%;
+}
+
+@media (min-width:992px){
+
+
+    
+
+  .col-lg-3{
+    float: left;
+    border: 1px solid gold;
+    width: 33.33%;
+  }
+}
+
+
+
+
+@media (min-width:768px)and (max-width:991px){
+  
+ 
+  .col-full{
+    float:left;
+     border: 1px solid gold;
+    width: 100%;
+
+  }
+  .col-md-6 {
+    float: left;
+    border: 1px solid gold;
+    width: 50%;
+  }
+ 
+}
+
+
+
+  @media (max-width:767px){
+  .col-sm-12{
+    width: 100%;
+  float:left;
+  border: 1px solid black;}
+}
+
+
