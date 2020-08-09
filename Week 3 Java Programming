@@ -27,12 +27,7 @@ import org.apache.commons.csv.*;
                 String info = record.get("Exports");
                 System.out.println(countryname+" : "+info);
                
-            }
-            else
-            {
-                System.out.println("NOT FOUND");
-                break;
-            }
+            }   
         }
     }
     
