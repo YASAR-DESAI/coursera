@@ -1,6 +1,7 @@
 
 /**
- * Write a description of GrayScaleConverter here.
+ *  The following code converts images into its grayscale (Black & White ) and saves them for you.
+     Best of luck!
  * 
  * @author YASAR
  * @version 10/08/2020
@@ -15,11 +16,11 @@ public class GrayScaleConverter {
         ImageResource outImage = new ImageResource(inImage.getWidth(),inImage.getHeight());
         for (Pixel pixel : outImage.pixels() )
         {
-          Pixel inPixel =  inImage.getPixel(pixel.getX(),pixel.getY());
+          Pixel inPixel =  inImage.getPixel(pixel.getX(),pixel.getY());         //GETTING CORRESPONDING PIXELS FROM inImage.
           
           int average = (inPixel.getRed()+inPixel.getGreen()+inPixel.getBlue())/3;
           
-          pixel.setRed(average);
+          pixel.setRed(average);                                  // SETTING THE PIXEL VALUES TO AVERAGE (RED = GREEN = BLUE = AVERAGE)
           
           pixel.setGreen(average);
           
@@ -29,8 +30,8 @@ public class GrayScaleConverter {
     return outImage;
     }
 
-    
-    public void convertandsave()
+    // METHOD TO CALL COVERT IMAGE INTO ITS GRAYSCALE AND SAVE IT.
+    public void convertandsave() 
     {
         DirectoryResource dr= new DirectoryResource();
         
@@ -38,12 +39,12 @@ public class GrayScaleConverter {
         {
         ImageResource image = new ImageResource(f);
         
-        String name = image.getFileName();
+        String name = image.getFileName();                          //METHOD TO GET NAME OF THE IMAGE.
         ImageResource gray = makeGray(image);
         String newname = "grayscale-"+name;
         gray.setFileName(newname);
-        gray.draw();
-        gray.save();
+        gray.draw();                                           // DRAWS THE IMAGE ON THE SCREEN.
+        gray.save();                                             //SAVES THE IMAGE.
        }
         
         
