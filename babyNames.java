@@ -234,7 +234,6 @@ public class BabyNamesEdited {
         
         System.out.println(" The year of highest rank for name "+name+ " is " +yearWithHighestRank );
         
-        
     }
     
     
@@ -269,25 +268,6 @@ public class BabyNamesEdited {
                  
                    average += rank ;
                    
-              /*     
-                   if (highestRank==0)
-                {
-                 highestRank=   getRank(Integer.parseInt(filename),name,gender);
-                 fileWithHighestRank = filename;
-                 average += (double)highestRank;
-                }
-                 else {
-                    
-                   currentRank = getRank(Integer.parseInt(filename),name,gender);
-                   if ( currentRank < highestRank )
-                   {
-                       highestRank = currentRank;
-                       fileWithHighestRank = filename;
-                  
-                    }
-                
-                    }
-                    */
               }
           
              }
